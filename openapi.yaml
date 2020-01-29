@@ -1,0 +1,259 @@
+swagger: '2.0'
+info:
+  version: 'v2'
+  title: My API
+  contact: {}
+host: triple-upgrade-262813.appspot.com
+basePath: /
+schemes:
+- https
+consumes:
+- application/json
+produces:
+- application/json
+paths:
+  /api/Values/GetStaffInitInstall/{mobilenum}/{imeino}/{androidos}/{androidmodel}:
+    get:
+      description: ''
+      summary: ApiValuesGetStaffInitInstallAndroidosAndroidmodel_GET
+      tags:
+      - Values
+      operationId: ApiValuesGetStaffInitInstallAndroidosAndroidmodel_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: mobilenum
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: imeino
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: androidos
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: androidmodel
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+          headers: {}
+  /api/Values/GetStaffAppInstall/{mobilenum}/{imeino}/{androidos}/{androidmodel}/{versionnum}/{uninstall}:
+    get:
+      description: ''
+      summary: ApiValuesGetStaffAppInstallAndroidosAndroidmodelVersionnumUninstall_GET
+      tags:
+      - Values
+      operationId: ApiValuesGetStaffAppInstallAndroidosAndroidmodelVersionnumUninstall_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: mobilenum
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: imeino
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: androidos
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: androidmodel
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: versionnum
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: uninstall
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+          headers: {}
+  /api/Values/updateAppInstallOn/{mobileno}:
+    get:
+      description: ''
+      summary: ApiValuesUpdateAppInstallOnByMobileno_GET
+      tags:
+      - Values
+      operationId: ApiValuesUpdateAppInstallOnByMobileno_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: mobileno
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: Success
+          headers: {}
+  /api/Values/GetStaffRegOTPGenerate/{mobilenum}/{imeino}/{attempts}:
+    get:
+      description: ''
+      summary: ApiValuesGetStaffRegOTPGenerateAttempts_GET
+      tags:
+      - Values
+      operationId: ApiValuesGetStaffRegOTPGenerateAttempts_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: mobilenum
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: imeino
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: attempts
+        in: path
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+          headers: {}
+  /api/Values/updateOTP/{mobileno}/{OTPValue}/{attempts}:
+    get:
+      description: ''
+      summary: ApiValuesUpdateOTPAttemptsByMobileno_GET
+      tags:
+      - Values
+      operationId: ApiValuesUpdateOTPAttemptsByMobileno_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: mobileno
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: OTPValue
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: attempts
+        in: path
+        required: true
+        type: integer
+        format: int32
+        description: ''
+      responses:
+        200:
+          description: Success
+          headers: {}
+  /api/Values/GetStaffRegOTPValidate/{mobilenum}/{imeino}/{otpvalue}:
+    get:
+      description: ''
+      summary: ApiValuesGetStaffRegOTPValidateOtpvalue_GET
+      tags:
+      - Values
+      operationId: ApiValuesGetStaffRegOTPValidateOtpvalue_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: mobilenum
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: imeino
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: otpvalue
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+          headers: {}
+  /api/Values/GetStaffRegister/{userid}/{password}/{mobilenum}/{thumbprint}/{profileimage}:
+    get:
+      description: ''
+      summary: ApiValuesGetStaffRegisterMobilenumThumbprintProfileimage_GET
+      tags:
+      - Values
+      operationId: ApiValuesGetStaffRegisterMobilenumThumbprintProfileimage_GET
+      deprecated: false
+      produces:
+      - application/json
+      parameters:
+      - name: userid
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: password
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: mobilenum
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: thumbprint
+        in: path
+        required: true
+        type: string
+        description: ''
+      - name: profileimage
+        in: path
+        required: true
+        type: string
+        description: ''
+      responses:
+        200:
+          description: Success
+          schema:
+            type: string
+          headers: {}
+tags:
+- name: Values
+  description: ''
