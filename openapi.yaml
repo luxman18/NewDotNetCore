@@ -3,7 +3,10 @@ info:
   version: 'v2'
   title: My API
   contact: {}
-host: triple-upgrade-262813.appspot.com
+host: "triple-upgrade-262813.cloud.goog"
+x-google-endpoints:
+  - name: "ja-app.endpoints.triple-upgrade-262813.cloud.goog"
+    target: "34.93.220.65"
 basePath: /
 schemes:
 - https
